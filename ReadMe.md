@@ -35,7 +35,7 @@
 
 
 
-##What assumptions did you make when writing this test?##
+## What assumptions did you make when writing this test? ##
 1. Tests running on chrome, user is not running it in headless mode. No additional capabilities were defined.
 2. User is booking In-person Tour
 3. User will always pick 2 days from today as an appointment date
@@ -44,7 +44,7 @@
 6. User will not check email for confirmation
 
 
-##How could this test be integrated into a CI/CD pipeline?##
+## How could this test be integrated into a CI/CD pipeline? ##
 1. Create a jenkins downstream job to Build Job deploying UI code (wait for the service to be health and running)
 2. Use Git plugin under SCM section to be connected to Git Hub repository
 3. Configure jenkins slave to have java 1.8 or higher
