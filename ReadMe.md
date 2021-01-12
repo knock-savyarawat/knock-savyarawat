@@ -7,7 +7,9 @@
 
 ```** Assumption the chromedriver which is checked in - is MACOS compatible. Please download the windows compatible file from "https://chromedriver.storage.googleapis.com/index.html?path=87.0.4280.88/" and put it under root folder of project. ** ```
 
-6. Please Note - User First Name, Last Name, email and message are randomGenerated number plus a static text. Phone Number is random generated with no restrictions except being 10 digits.
+ ``` Please Note - User First Name, Last Name, email and message are randomGenerated number plus a static text. Phone Number is random generated with no restrictions except being 10 digits. ```
+ 
+ ``` Please Note - I created a profile(id = integration-tests) in maven pom.xml to run these tests. 'CucumberRunnerIT.java' file is our main entry point and is located in source folder (src/it/java).Feature files are present under source folder (src/it/resources) ```
 
 ## How can this test be extended? ##
 1. This Automation test can have - a separate Element Locator storing like in DB
@@ -16,9 +18,10 @@
 4. Tests can be parameterized to have the data coming from scenario examples or Json or Excel file
 5. Tests can have multiple profiles set up in pom.xml - targeting SMOKE and regression and feature saggregation tests
 6. Tests can support multiple browsers - like Firefox, Safari etc.
-7. Tests can have better reporting including screenshots at failure 
-8. Tests can have better logging 
-9. Tests can be integrated with the Test Management Tool to publish automation results
+7. Tests can support parallel test execution
+8. Tests can have better reporting including screenshots at failure 
+9. Tests can have better logging 
+10. Tests can be integrated with the Test Management Tool to publish automation results
 
 
 ## How else could this feature be tested? ##
@@ -33,7 +36,8 @@
 8. User gets an email with confirmation
 9. Button is disabled until all the required fields are set.
 10. Checking for cancel button functionality for iframes.
-11. ** Verify Remaining navigation buttons - Self-GUided Tour, View Photos, Prices/Availability and functionalities **
+11. Run test on different browsers and parallel execution of scripts if applicable
+12. ** Verify Remaining navigation buttons - Self-GUided Tour, View Photos, Prices/Availability and functionalities **
 
 
 
