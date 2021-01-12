@@ -5,7 +5,9 @@
 4. Right Click on Project and click Maven Update (Configure As Maven Project)
 5. Right Click on Project - RunAs - Maven Build... - In Goals type - ```clean install -Pintegration-tests```
 
-**Assumption the chromedriver which is checked in - is MACOS compatible. Please download the windows compatible file from "https://chromedriver.storage.googleapis.com/index.html?path=87.0.4280.88/" and put it under root folder of project. ** 
+```** Assumption the chromedriver which is checked in - is MACOS compatible. Please download the windows compatible file from "https://chromedriver.storage.googleapis.com/index.html?path=87.0.4280.88/" and put it under root folder of project. ** ```
+
+6. Please Note - User First Name, Last Name, email and message are randomGenerated plus a static text. Phone Number is random generated with no restrictions except being 10 digits.
 
 ## How can this test be extended? ##
 1. This Automation test can have - a separate Element Locator storing like in DB
@@ -37,11 +39,13 @@
 
 ## What assumptions did you make when writing this test? ##
 1. Tests running on chrome, user is not running it in headless mode. No additional capabilities were defined.
+2.
 2. User is booking In-person Tour
 3. User will always pick 2 days from today as an appointment date
 4. User is picking second available time from dropdown
 5. The test verification at the end is always the same text ""
 6. User will not check email for confirmation
+7. Implemented BDD, created Featur File and Step definition. Used Maven as a build/dependency management tool.
 
 
 ## How could this test be integrated into a CI/CD pipeline? ##
