@@ -7,7 +7,7 @@
 
 ```** Assumption the chromedriver which is checked in - is MACOS compatible. Please download the windows compatible file from "https://chromedriver.storage.googleapis.com/index.html?path=87.0.4280.88/" and put it under root folder of project. ** ```
 
-6. Please Note - User First Name, Last Name, email and message are randomGenerated plus a static text. Phone Number is random generated with no restrictions except being 10 digits.
+6. Please Note - User First Name, Last Name, email and message are randomGenerated number plus a static text. Phone Number is random generated with no restrictions except being 10 digits.
 
 ## How can this test be extended? ##
 1. This Automation test can have - a separate Element Locator storing like in DB
